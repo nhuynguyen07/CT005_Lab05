@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lợi ích của công nghệ số trong học tập</title>
+    <style>
+        :root {
+            --blue-900: #0b3b60;
+            --blue-700: #1269a5;
+            --blue-500: #2f9cdb;
+            --blue-100: #eaf6fd;
+            --ink: #183247;
+            --muted: #5f7382;
+            --white: #ffffff;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            background: linear-gradient(135deg, #f4fbff 0%, #e4f3fb 100%);
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            line-height: 1.6;
+        }
+
+
+        .page {
+            width: min(100% - 32px, 1080px);
+            margin: 0 auto;
+        }
+
+
+        header {
+            padding: 64px 0 42px;
+            text-align: center;
+        }
+
+
+        .eyebrow {
+            margin: 0 0 12px;
+            color: var(--blue-700);
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+
+        h1 {
+            max-width: 780px;
+            margin: 0 auto 18px;
+            color: var(--blue-900);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            line-height: 1.15;
+        }
+
+
+        .intro {
+            max-width: 720px;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 1.08rem;
+        }
+
+
+        main {
+            display: grid;
+            gap: 28px;
+            padding-bottom: 40px;
+        }
+
+
+        .section {
+            overflow: hidden;
+            border: 1px solid #d2e9f5;
+            border-radius: 14px;
+            background: var(--white);
+            box-shadow: 0 12px 30px rgba(13, 83, 124, 0.09);
+        }
+
+
+        .section-heading {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0;
+            padding: 20px 24px;
+            color: var(--blue-900);
+            background: var(--blue-100);
+            font-size: 1.45rem;
+        }
+
+
+        .section-heading::before {
+            display: inline-block;
+            width: 8px;
+            height: 28px;
+            border-radius: 8px;
+            background: var(--blue-500);
+            content: "";
+        }
+
+
+        .content {
+            padding: 24px;
+        }
+
+
+        .infographic {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-height: 720px;
+            object-fit: contain;
+            border: 1px solid #e0edf3;
+            border-radius: 8px;
+            background: #f8fcfe;
+        }
+
+
+        .video-frame {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 56.25%;
+            border-radius: 8px;
+            background: #092c47;
+        }
+
+
+        iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+
+        .video-link {
+            display: inline-block;
+            margin-top: 16px;
+            color: var(--blue-700);
+            font-weight: 600;
+        }
+
+
+        footer {
+            padding: 24px 0 36px;
+            border-top: 1px solid #c9e2ef;
+            color: var(--muted);
+            font-size: 0.88rem;
+            text-align: center;
+        }
+
+
+        @media (max-width: 600px) {
+            .page {
+                width: min(100% - 20px, 1080px);
+            }
+
+
+            header {
+                padding: 42px 0 28px;
+            }
+
+
+            .section-heading,
+            .content {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="page">
+        <header>
+            <p class="eyebrow">Báo cáo học tập số</p>
+            <h1>Lợi ích của công nghệ số trong học tập</h1>
+            <p class="intro">
+                Công nghệ số mở rộng khả năng tiếp cận tri thức, giúp người học học tập
+                linh hoạt, kết nối hiệu quả và chủ động phát triển kỹ năng trong thời đại mới.
+            </p>
+        </header>
+
+
+        <main>
+            <section class="section" aria-labelledby="infographic-title">
+                <h2 class="section-heading" id="infographic-title">Infographic</h2>
+                <div class="content">
+                    <img class="infographic" src="./Lab05_Ex2.1.png.png"
+                        alt="Infographic về lợi ích của công nghệ số trong học tập">
+                </div>
+            </section>
+
+
+            <section class="section" aria-labelledby="video-title">
+                <h2 class="section-heading" id="video-title">Video giới thiệu</h2>
+                <div class="content">
+                    <div class="video-frame">
+                        <iframe src="https://youtube.com/shorts/Mg0HSl6CPsI" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <a class="video-link" href="https://youtube.com/shorts/Mg0HSl6CPsI" target="_blank" rel="noopener noreferrer">
+                        Mở video trên YouTube
+                    </a>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            Nội dung văn bản tham khảo từ Google Gemini, hình ảnh từ Unsplash (Unsplash license). Video tạo bởi CapCut,
+            tài liệu từ Pexels/FreeSound (CC0).
+        </footer>
+    </div>
+</body>
+
+
+</html>
